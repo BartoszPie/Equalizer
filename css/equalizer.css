@@ -1,0 +1,307 @@
+:root {
+
+    --text__color--dark-blue: #191826;
+
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1366px;
+    overflow-x: hidden;
+    padding: 0 2rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+
+    animation:  10s infinite ease;
+    background-image: url("../assets/bg-main-desktop.png");
+    background-position: 70% 70%;
+    background-size: 100%;
+    }
+
+
+.logo-top {
+    margin-top: 62px;
+    margin-bottom: 127px;
+}
+
+.pattern-top {
+    position: absolute;
+    right: 0;
+    top: -2.3rem;
+}
+
+.text_top {
+    margin-right: 315px;
+    margin-top: 0;
+}
+
+.text_top__header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 88px;
+    line-height: 80px;
+    letter-spacing: -1px;
+    color: var(--text__color--dark-blue);
+}
+
+.text_top__content {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 34px;
+    color: #191826;
+}
+
+.mid__img2 {
+    position: relative;
+    bottom: 200px;
+    left: 20px;
+    z-index: -1;
+    max-width: 100%;
+}
+
+.mid__phone{
+    max-width: 50%;
+    max-height: 100%;
+    position: relative;
+    bottom: 200px;
+    left: 102px;
+}
+
+.mid__background {
+    background-color: #191826;
+    position: relative;
+    height: 600px;
+    margin-top: 320px;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.mid__premium {
+    bottom: 570px;
+    left: 580px;
+    position: relative;
+    background-color: #FA7453;
+    height: 700px;
+    width: 40%;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 48px;
+}
+
+.mid__premium__header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 20px;
+}
+
+.mid__premium__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 34px;
+}
+
+.price__p_dollar {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 65px;
+    line-height: 52px;
+}
+
+.price__p_month {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    position: relative;
+    bottom: 15px;
+}
+
+button {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 32px;
+    border-radius: 20px;
+    width: 100%;
+    height: 61px;
+    border: 0;
+}
+
+.mid__ios_button {
+    color: white;
+    background-color: #191826;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+.mid__android_button {
+    background-color: white;
+    cursor: pointer;
+}
+
+.mid__premium__price {
+    margin: 40px 0;
+}
+
+.bottom {
+    position: relative;
+    display: flex;
+    top: 202px;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.bottom_text {
+    width: 30%;
+}
+
+.bottom_icons {
+    margin-left: 10px;
+    position: relative;
+}
+
+.bottom_logo {
+    height: 32px;
+    width: 146px;
+}
+
+/*hover*/
+
+
+.bottom_test:hover {
+
+    filter: invert(55%) sepia(28%) saturate(1526%) hue-rotate(323deg) brightness(104%) contrast(96%);
+}
+
+.mid__ios_button:hover {
+    background-color: #66E2DC;
+}
+
+.mid__android_button:hover {
+    background-color: #FFB964;
+}
+
+/*media query*/
+@media (max-width: 1050px) {
+
+    .mid__premium {
+        bottom: 500px;
+        left: 300px;
+        width: 50vw;
+    }
+
+    /*.mid__phone{*/
+    /*    width: 312px;*/
+    /*    height: 642px;*/
+    /*    position: relative;*/
+    /*    bottom: 200px;*/
+    /*    left: 102px;*/
+    /*}*/
+
+    .mid__img2 {
+        position: absolute;
+        left: 200px;
+        bottom: 200px;
+    }
+
+    body {
+        background-image: url("../assets/bg-main-tablet.png");
+        background-position: 50% 80%;
+    }
+
+    .bottom {
+        display: flex;
+        position: relative;
+        top: 350px;
+        flex-direction: column;
+    }
+
+    span {
+        position: absolute;
+        right: 0;
+        bottom: 50px;
+    }
+
+    .bottom_text {
+        width: 40%;
+    }
+
+    .text_top__header {
+        font-size: 64px;
+    }
+
+    .text_top__content {
+        font-size: 18px;
+    }
+
+    .mid__premium__header {
+        font-size: 32px;
+    }
+
+    .mid__premium__text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .pattern-top {
+        display: none;
+    }
+
+    .text_top {
+        margin-right: 0;
+    }
+
+    .text_top__header {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .text_top__content {
+        font-size: 16px;
+
+    }
+
+    .mid__premium {
+        bottom: 100px;
+        left: 0;
+        width: 100%;
+        padding: 48px;
+    }
+
+    .bottom {
+        top: 600px;
+        gap: 4em;
+    }
+
+    span {
+        position: static;
+    }
+
+    .mid__phone {
+        width: 50%;
+        left: 80px;
+    }
+
+    .mid__img2 {
+        left: 50px;
+        width: 50%;
+        top: 0;
+    }
+
+}
+
+@media (max-width: 380px) {
+    .mid__img2 {
+        bottom: 350px;
+    }
+}
